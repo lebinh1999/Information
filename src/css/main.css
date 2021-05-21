@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box !important;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: "Averia Serif Libre", cursive;
+  font-size: 14px;
+  margin: 0 20px;
+}
+
+.header {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.header img {
+  width: 130px;
+  height: 130px;
+}
+
+.header p:first-child {
+  font-size: 20px;
+}
+
+.information {
+  margin-top: 15px;
+}
+
+.information span {
+  font-weight: 700;
+}
+
+.information .information__content p:first-child {
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.information .information__item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 10px 0;
+}
+
+.information .information__item1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.information .information__Result {
+  background: #f5f5f5;
+  padding: 10px 0;
+  margin-top: 15px;
+}
+
+.information .information__Result .information__ALT {
+  display: flex;
+  justify-content: space-between;
+  background: #f5f5f5;
+}
+
+.information .information__Result .information__ALT a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+.information .information__table {
+  margin-top: 15px;
+  background: #d8d8d8;
+  padding: 10px 0;
+}
+
+.information .information__table table {
+  border-collapse: collapse;
+}
+
+.information .information__table table thead {
+  border-bottom: 3px solid #f5f5f5;
+}
+
+.information .information__table table .table__thead tr th {
+  padding: 10px 70px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.information .information__table table .table__tbody tr td {
+  padding: 10px 95px;
+}
+
+.information .information__table .table__none {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .information .information__item1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .information .information__table {
+    flex-direction: column-reverse;
+  }
+  .information .information__table table {
+    display: none;
+  }
+  .information .information__table .table__none {
+    display: block;
+  }
+  .information .information__Result .block {
+    display: block;
+  }
+}
+
+.date {
+  margin-top: 15px;
+  float: right;
+  text-align: center;
+}
+
+.date p {
+  padding-top: 30px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+/*# sourceMappingURL=main.css.map */
